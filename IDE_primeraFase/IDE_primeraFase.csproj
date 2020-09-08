@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AnalizadorLexico.cs" />
+    <Compile Include="Excepciones\ExcepcionLexico.cs" />
+    <Compile Include="Herramientas\Herramienta.cs" />
+    <Compile Include="Herramientas\ListaEnlazada.cs" />
+    <Compile Include="Metodo.cs" />
+    <Compile Include="Herramientas\Nodo.cs" />
+    <Compile Include="Resultado.cs" />
+    <Compile Include="TablaSimbolos.cs" />
+    <Compile Include="Variable.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

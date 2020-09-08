@@ -20,19 +20,35 @@ namespace IDE_primeraFase
     /// </summary>
     public partial class MainWindow : Window
     {
+        ListaEnlazada<String> listaErroresMostrar = new ListaEnlazada<String>();
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+        private void ListadoErrores(ListaEnlazada<String> listadoErrores) {
+            listaErroresMostrar = listadoErrores;
         }
 
         private void areaDesarrollo_TextChanged(object sender, TextChangedEventArgs e)
         {
+            
+        }
 
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        public void mostrarErrores() {
+            Nodo<String> nodoAuxiliar = listaErroresMostrar.obtnerPrimerNodo();
+
+            for (int errorActual =0; errorActual< listaErroresMostrar.darTamanio();errorActual++) {
+                txt_areaLog.Text += nodoAuxiliar.contenido+"\n";
+
+                nodoAuxiliar = nodoAuxiliar.nodoSiguiente;
+            }            
         }
     }
 }
