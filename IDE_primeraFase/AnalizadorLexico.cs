@@ -33,13 +33,13 @@ namespace IDE_primeraFase
                             resultadosHallados= analizarNumero(numeroLinea, caracterActual, lineaDesglosada);
                         break;
 
-                        case 'c':
+                        /*case 'c':
                             resultadosHallados;
                         break;
                         
                         case 'o':
-                            resultadosHallados;
-                        break;
+                            //resultadosHallados;
+                        break;*/
 
                         default:
                             //se manda a llamar al método de Excepciones para que informe el hecho  a la GUI y así pueda marcar y actualizar el área de log
@@ -176,7 +176,9 @@ namespace IDE_primeraFase
             return detallesDecimal;
         }//listo
 
-       public void analizar
+         public void analizarNecesitadosCierre() { 
+            
+        }
 
         private void analizarCadena(int numeroLinea, int posicionInicialAnalisis, char[] lineaAEstudiar)
         {

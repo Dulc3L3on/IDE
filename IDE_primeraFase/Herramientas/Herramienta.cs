@@ -41,6 +41,8 @@ namespace IDE_primeraFase.Herramientas
                 String comentarioMultiLinCierre = "*" + barraComentario;
                 return comentarioMultiLinCierre;
             }
+
+            return null;
         }
         public char cerrarAperturado(char signoApertura) {//será llamado por el keyTyped para que revise y cuando sea alguno de estos tipos que devuelva el caracter correspondiente...
             if (((int)signoApertura) == 34) {
@@ -50,6 +52,7 @@ namespace IDE_primeraFase.Herramientas
                 return (char)41;
             }//cuando sea incluido también irían aquí los [] y las {}
 
+            return (char)32;
         }
 
         
